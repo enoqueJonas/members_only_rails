@@ -1,0 +1,9 @@
+<div>
+  <ul>
+    <% @posts.each do |post| %>
+      <li><%= post.title %></li>
+      <li><%= post.body %></li>
+      <%= user_signed_in? ? user_signed_in? : "No" %>
+    <% end %>
+  </ul>
+</div>
